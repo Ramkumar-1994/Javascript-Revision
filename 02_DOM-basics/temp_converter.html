@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black flex justify-center items-center h-screen ">
+  <div class="bg-white text-black w-3/4 md:w-[400px] h-[350px] p-6 rounded-lg text-center">
+    <h1 class="text-2xl font-bold">Celcuis to Fahrenheit</h1>
+    <input type="text" placeholder="temp in deg c" class='w-full rounded-md p-2 my-3 focus:outline-none font-semibold border-2 border-gray-500' id="temp">
+    <button class="bg-black text-white px-4 py-2 rounded-md font-semibold my-2" onclick="convert()" d="btn">Convert to Fahrenheit</button>
+    <div  class="my-2">
+      <h1 id="result1" class="font-bold text-3xl md:text-2xl"></h1>
+    </div>
+  </div>
+  <script src="dom.js"></script>
+</body>
+</html>

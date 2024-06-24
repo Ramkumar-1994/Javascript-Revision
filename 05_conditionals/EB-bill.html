@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-cyan-50 flex justify-center items-center h-screen">
+    <div
+      class="bg-indigo-500 w-3/4 md:w-[400px] h-[350px] p-6 rounded-lg"
+    >
+      <h1 class="text-2xl font-bold text-white text-center mb-2">EB Bill Calculator</h1>
+      <div class="mx-auto">
+        <ul class="list-disc list-inside">
+          <li class="">For first 50 units Rs.0.75/unit</li>
+          <li>For next 100 units Rs.1.00/unit</li>
+  
+          <li>For next 100 units Rs.1.30/unit</li>
+          <li>For unit above 250 units Rs.1.50/unit</li>
+        </ul>
+      </div>
+     
+      <input
+        type="text"
+        placeholder="Enter units"
+        class="w-full rounded-md p-2 my-3 focus:outline-none font-semibold"
+        id="units"
+      />
+      <button
+        class="bg-black text-white px-4 py-2 rounded-md font-semibold my-2 mx-auto block" onclick="calculate()"
+      >
+        Calculate
+      </button>
+      <div class="my-2">
+        <h1 id="result" class="font-bold text-3xl md:text-2xl text-center my-3"></h1>
+      </div>
+    </div>
+    <script src="EB_bill.js"></script>
+  </body>
+</html>
