@@ -153,12 +153,57 @@ let studentAge=studentDetail.map((student)=>student.age)
 
 console.log(studentAge)
 
+//Filter Method
+
+let cost=[73,230,130,58,92,100]
+
+let lessCostProduct=cost.filter((product)=>product<100)
+
+console.log(lessCostProduct)
+
+//Reduce
+
+let cartTotal=cost.reduce((curr,prev,index,cost)=>curr+prev)
+
+console.log(cartTotal)
+
+let arr2d=[
+  ['a','b','c'],
+  ['c','d','f'],
+  ['d','f','g']
+]
+
+let arrCount=arr2d.flat().reduce((curr,prev,index,arr2d)=>
+{
+      if(curr[prev])
+        {
+          curr[prev]++
+        }
+      else{
+        curr[prev]=1
+      }
+      return curr
+},{})
+
+console.log(arrCount)
+
+//Exercise
+
+let array = [4, 6, 2, 3, 1, 1, 3, 5, 7, 8, 4, 3];
+
+let uniqueArray = array.filter((value, index) => array.indexOf(value) === index);
+
+console.log(uniqueArray); // Output: [4, 6, 2, 3, 1, 5, 7, 8]
 
 
+let name='Robert Andrew George'.split(' ').map((letter)=>
+{
+  return letter[0]
+})
 
+let result=name.join('')
 
-
-
+console.log(result)
 
 
 
