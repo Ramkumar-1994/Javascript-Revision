@@ -173,7 +173,7 @@ let arr2d=[
   ['d','f','g']
 ]
 
-let arrCount=arr2d.flat().reduce((curr,prev,index,arr2d)=>
+let arrCount=arr2d.flat().reduce((curr,prev)=>
 {
       if(curr[prev])
         {

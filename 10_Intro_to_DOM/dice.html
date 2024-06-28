@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="dice.css">
+</head>
+<body>
+  <div class="w-96 mt-20 mx-auto text-center">
+    
+    <h1 class="font-bold text-4xl">Roll the Dice</h1>
+    <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <h1 class="text-4xl font-semibold">Game Plan </h1>
+    <ul>
+      <li>Each Player should Roll the dice 6 times who gets the maximum Score wins the Game.</li>
+    </ul>
+    <div class="dice flex justify-center items-center font-bold text-5xl mx-auto" id="dice">0</div>
+    <button class="bg-black text-white px-4 py-2 rounded-md font-semibold my-2 cursor-pointer " id="roll" onclick="Roll()">Roll dice</button>
+  </div>
+  <div class="mx-auto w-96 flex justify-between text-4xl font-semibold">
+    <h1 id="score">Score:</h1>
+  </div>
+  <audio src="dice-audio.mp3" id="dice-audio"></audio>
+  <script src="dice.js"></script>
+</body>
+</html>

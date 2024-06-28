@@ -1,0 +1,22 @@
+.dice
+{
+  margin:10px 0;
+  width:100px;
+  height:100px;
+  border-radius: 12px;
+  background-color: rgb(207, 206, 206);
+  
+}
+
+.spin
+{
+  animation-name:spin;
+  animation-duration: 1s;
+}
+@keyframes spin
+{
+  to{
+    transform:rotate(360deg)
+  }
+}
+

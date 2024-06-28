@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Dom</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <button>Click</button>
+  <button class="btn">Class Button</button>
+  <button id="btn">
+    ID Button
+  </button>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, eos.</p>
+  <h1>Button Designing</h1>
+  <button class="bagbutton" onclick="bagbtn(1)">Add to Bag</button>
+
+  <button class="wishlistbtn" onclick="bagbtn(-1)"><span class="heart">❤</span>   WISHLIST</button>
+  <button class="bagbutton" onclick="bagbtn(2)">Add 1+1 Sale Item</button>
+
+  <h1 id="result"></h1>
+  <h1 id="name"></h1>
+
+
+
+  <script src="index.js"></script>
+
+  <script>
+    let name='Manokaran'
+    let displayName=document.getElementById('name')
+    displayName.innerText=name
+
+    console.log(eval('46+4+7+8+9'))
+  </script>
+</body>
+
+</html>

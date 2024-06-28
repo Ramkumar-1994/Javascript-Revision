@@ -1,0 +1,26 @@
+.bagbutton
+{
+  border:none;
+  background-color: lightgreen;
+  padding:6px 18px;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+.wishlistbtn
+{
+  cursor: pointer;
+  padding:4px 50px;
+  border:2px solid black;
+  border-radius: 8px;
+  font-weight:600;
+  word-spacing:0;
+  /* font-size: 16px; */
+  
+}
+
+.heart
+{
+  color:red;
+  font-size:18px;
+}
